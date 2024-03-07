@@ -1,0 +1,121 @@
+body {
+
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+/* Ändrar färg på skrollbar för att identikera vilken färg varje kategori har */
+#UXC{
+background-color: #d79090;
+}
+#FEC{
+    background-color: #ccffcc;
+}
+#BEC{
+    background-color: #ccccff;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #007bff;
+    padding: 20px;
+    border-bottom: 2px solid #0056b3;
+}
+
+#taskForm {
+    display: flex;
+    background-color: #ccc;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 24px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#rubrik {
+    display: flex; 
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+#taskInput, #categorySelect, #doneCheckbox, button {
+    margin: 5px 0;
+    padding: 8px; 
+    justify-content: center;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    font-size: 14px; 
+    display: flex;
+    
+}
+
+#taskInput, #categorySelect {
+    width: 270px;
+}
+
+button {
+    color: #007bff; 
+    background-color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.column {
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    margin: 0 10px;
+    padding: 10px;
+}
+
+.tasks {
+    min-height: 50px;
+    margin-top: 10px;
+}
+
+.task {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    position: relative;
+}
+
+.task h3 {
+    margin: 0;
+    font-weight: normal;
+    font-size: 14px; 
+}
+
+.task button {
+    background-color: #007bff; 
+    border: none;
+    border-radius: 3px;
+    color: #fff; 
+    cursor: pointer;
+    padding: 5px; 
+    transition: background-color 0.3s ease;
+    font-size: 12px; 
+    display: block; 
+}
+
+.task button:hover {
+    background-color: #0056b3;
+}
